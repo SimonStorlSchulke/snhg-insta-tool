@@ -5,15 +5,18 @@ Automatically crops images to a square and adds a label on a chosen image.
 
 ![screenshot](doc/screenshot.png)
 
-# Development
+## Development
 
-local webserver:  
-`go run . INSTA_USERNAME INSTA_PASSWORD`
+**local webserver:**
+- install [Go](https://go.dev/)
+- `go mod tidy`
+- `go run . INSTA_USERNAME INSTA_PASSWORD`
 
-tampermonkey userscript:
+**Tampermonkey userscript:**
 - `cd frontend`
+- `npm install`
 - `npx webpack`
-- copy frontend/build/tampermonkeyscript.js to a new userscript
+- copy frontend/build/tampermonkeyscript.js to a new [Tampermonkey](https://www.tampermonkey.net/) userscript
 - navigate to any dog on [streunernothilfe-grenzenlos.de](https://www.streunernothilfe-grenzenlos.de/) i.e [cherry](https://www.streunernothilfe-grenzenlos.de/hunde/h%C3%BCndinnen/cherry/)
 - press ctrl + i
 - select images to post
